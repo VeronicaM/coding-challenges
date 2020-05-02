@@ -1,0 +1,4 @@
+**/**.js
+**/**.md
+.vscode
+node_modules

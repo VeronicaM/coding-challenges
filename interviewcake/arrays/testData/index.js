@@ -9,6 +9,11 @@ const testMeetings = [{
     label: 'two-overlapping-meetings-no-stretch'
 },
 {
+    scheduledMeetings: [{ startTime: 1, endTime: 2 }, { startTime: 2, endTime: 3 }],
+    expectedResult: [{ startTime: 1, endTime: 3 }],
+    label: 'two-chained-meetings'
+},
+{
     scheduledMeetings: [{ startTime: 1, endTime: 3 }, { startTime: 0, endTime: 4 }],
     expectedResult: [{ startTime: 0, endTime: 4 }],
     label: 'reversed-two-overlapping-meetings-no-stretch'

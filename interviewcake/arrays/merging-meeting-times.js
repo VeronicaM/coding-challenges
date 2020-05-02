@@ -42,7 +42,7 @@ function mergeRanges(scheduledMeetings = []) {
         const { startTime: s2, endTime: e2 } = scheduledMeetings[1];
 
         // merge overlapping meeting intervals
-        if (s2 < e1) {
+        if (s2 <= e1) {
             if (s1 < s2) {
                 startTime = s1;
             } else {

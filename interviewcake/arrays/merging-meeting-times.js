@@ -35,31 +35,28 @@ const testCases = require('./testData/index.js');
 */
 
 function mergeRanges(scheduledMeetings = []) {
-    if (scheduledMeetings.length === 2) {
-        let startTime, endTime;
+    // sort meeting intervals ascending by starting time
+    const sortedScheduledMeetings = [...scheduledMeetings].sort((a, b) => {
+        return a.startTime - b.startTime;
+    });
 
-        const { startTime: s1, endTime: e1 } = scheduledMeetings[0];
-        const { startTime: s2, endTime: e2 } = scheduledMeetings[1];
+    // Initialize mergedMeetings with the earliest meeting
+    let result = [sortedScheduledMeetings[0]];
+    
+    for (let i = 1; i < sortedScheduledMeetings.length; i++) {
+        const { startTime: s1, endTime: e1 } = sortedScheduledMeetings[i]; // currentMeeting
+        let { endTime } = result[result.length - 1]; // lastMergedMeeting
 
         // merge overlapping meeting intervals
-        if (s2 <= e1) {
-            if (s1 < s2) {
-                startTime = s1;
-            } else {
-                startTime = s2;
-            }
-
-            if (e1 > e2) {
-                endTime = e1;
-            } else {
-                endTime = e2;
-            }
-
-            return [{ startTime, endTime }];
+        if (s1 <= endTime) {
+            result[result.length - 1].endTime = Math.max(endTime, e1);
+        } else {
+            // Add the current meeting since it doesn't overlap
+            result.push(sortedScheduledMeetings[i]);
         }
     }
 
-    return scheduledMeetings;
+    return result;
 }
 
 

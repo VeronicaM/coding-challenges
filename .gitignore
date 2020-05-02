@@ -1,4 +1,4 @@
-**/**.js
-**/**.md
+codility/**/**.js
+codility/**/**.md
 .vscode
 node_modules

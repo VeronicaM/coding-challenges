@@ -1,0 +1,4 @@
+https://app.codility.com/demo/results/trainingSRJMGV-CTD/
+
+Expected worst-case space complexity O(1)
+Expected worst-case time complexity O(log(N))

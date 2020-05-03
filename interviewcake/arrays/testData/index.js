@@ -79,10 +79,12 @@ const testArrays = [
         label: 'one-char-array'
     },
     {
-        chars: ['v',
+        chars: [
+            'v',
             'e',
             'r',
-            'a'],
+            'a'
+        ],
         expectedResult: [
             'a',
             'r',
@@ -92,7 +94,8 @@ const testArrays = [
         label: 'short-array1'
     },
     {
-        chars: ['b',
+        chars: [
+            'b',
             'u',
             'c',
             'u',
@@ -116,9 +119,116 @@ const testArrays = [
         label: 'short-array2'
     },
 
-]
+];
+
+const testWordsArrays = [
+    {
+        chars: [],
+        expectedResult: [],
+        label: 'empty-array'
+    },
+    {
+        chars: ['v'],
+        expectedResult: [
+            'v'
+        ],
+        label: 'one-char-array'
+    },
+    {
+        chars: [
+            'v',
+            'e',
+            'r',
+            'a'
+        ],
+        expectedResult: [
+            'v',
+            'e',
+            'r',
+            'a'
+        ],
+        label: 'one-word-array'
+    },
+    {
+        chars: [
+            'v',
+            'e',
+            'r',
+            'o',
+            'n',
+            'i',
+            'c',
+            'a',
+            ' ',
+            'm',
+            'i',
+            'h',
+            'a',
+            'i'
+        ],
+        expectedResult: [
+            'm',
+            'i',
+            'h',
+            'a',
+            'i',
+            ' ',
+            'v',
+            'e',
+            'r',
+            'o',
+            'n',
+            'i',
+            'c',
+            'a',
+        ],
+        label: 'two-words-array'
+    },
+    {
+        chars: [
+            'v',
+            'e',
+            'r',
+            'a',
+            ' ',
+            'm',
+            'i',
+            'h',
+            'a',
+            'i'
+        ],
+        expectedResult: [
+            'm',
+            'i',
+            'h',
+            'a',
+            'i',
+            ' ',
+            'v',
+            'e',
+            'r',
+            'a',
+        ],
+        label: 'two-words-array'
+    },
+    {
+    chars: [
+        'c', 'a', 'k', 'e', ' ',
+        'p', 'o', 'u', 'n', 'd', ' ',
+        's', 't', 'e', 'a', 'l'
+    ]
+    ,
+    expectedResult: [
+        's', 't', 'e', 'a', 'l', ' ',
+        'p', 'o', 'u', 'n', 'd', ' ',
+        'c', 'a', 'k', 'e',
+    ],
+    label: 'three-words-array'
+},
+];
 
 module.exports = {
     testMeetings,
-    testArrays
+    testArrays,
+    testWordsArrays
 }

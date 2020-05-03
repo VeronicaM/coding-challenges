@@ -29,12 +29,12 @@ const testCases = require('./testData/index.js');
  * 
 */
 
-function reverseArray(array = []) {
-    return array;
+function reverseArray(chars = []) {
+    return chars;
 }
 
-function assert(array, result, expected) {
-    const resultMsg = `Input array was initially ${array} and after being reversed the expected value is ${expected}`;
+function assert(chars, result, expected) {
+    const resultMsg = `Input array was initially ${chars} and after being reversed the expected value is ${expected}`;
     if (common.isArrayEqual(result, expected)) {
         console.log(resultMsg.green)
         return true;
@@ -48,9 +48,9 @@ function printTestResult(solutionFunc) {
     let count = 0;
     const { testArrays } = testCases;
 
-    testArrays.forEach(({ array, expectedResult, label = '' }, index) => {
+    testArrays.forEach(({ chars, expectedResult, label = '' }, index) => {
         console.log(`${index + 1}. ${label}`.yellow);
-        const isCorrect = assert(array, solutionFunc(array), expectedResult);
+        const isCorrect = assert(chars, solutionFunc(chars), expectedResult);
 
         if (!isCorrect) {
             count += 1;

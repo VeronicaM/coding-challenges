@@ -67,19 +67,19 @@ const testMeetings = [
 
 const testArrays = [
     {
-        array: [],
+        chars: [],
         expectedResult: [],
         label: 'empty-array'
     },
     {
-        array: ['v'],
+        chars: ['v'],
         expectedResult: [
             'v'
         ],
         label: 'one-char-array'
     },
     {
-        array: ['v',
+        chars: ['v',
             'e',
             'r',
             'a'],

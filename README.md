@@ -1,5 +1,6 @@
 # Coding Challenges
 Different algorithms and data structure challenges from Codility, interviewcake
+I usually create a PR for each solution I add to the repo. Check the [closed PRs](https://github.com/VeronicaM/coding-challenges/pulls?q=is%3Apr+is%3Aclosed) sections for more details on my implementation process and what I learnt/discovered through each exercise.
 
 ## InterviewCake
 
@@ -7,6 +8,8 @@ Different algorithms and data structure challenges from Codility, interviewcake
 - [Merge meeting intervals](https://github.com/VeronicaM/coding-challenges/blob/master/interviewcake/arrays/merging-meeting-times.js)
 - [Reverse string in place](https://github.com/VeronicaM/coding-challenges/blob/master/interviewcake/arrays/revert-string-in-place.js)
 - [Reverse words in place in an array of chars](https://github.com/VeronicaM/coding-challenges/pull/1)
+- [Merge sorted Arrays](https://github.com/VeronicaM/coding-challenges/blob/master/interviewcake/arrays/merge-sorted-arrays.js)
+- [Merge multiple sorted arrays](https://github.com/VeronicaM/coding-challenges/blob/master/interviewcake/arrays/merge-multiple-sorted-arrays.js)
 
 ### Codility
 
@@ -115,8 +118,9 @@ Properties
 
 If you know the sum of a triangular series, you can find n by solving a quadratic equation. 
 
-If you know n, you can easily find the sum with the formula below: 
+![Quadratic equation](https://www.screencast.com/t/0i0C9KgXcSW9) 
 
+If you know n, you can easily find the sum with the series sum formula above
 
 # Resources
 

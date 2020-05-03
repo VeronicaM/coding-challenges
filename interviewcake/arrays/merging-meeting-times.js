@@ -45,7 +45,7 @@ function mergeRanges(scheduledMeetings = []) {
     
     for (let i = 1; i < sortedScheduledMeetings.length; i++) {
         const { startTime: s1, endTime: e1 } = sortedScheduledMeetings[i]; // currentMeeting
-        let { endTime } = result[result.length - 1]; // lastMergedMeeting
+        const { endTime } = result[result.length - 1]; // lastMergedMeeting
 
         // merge overlapping meeting intervals
         if (s1 <= endTime) {
@@ -59,7 +59,6 @@ function mergeRanges(scheduledMeetings = []) {
     return result;
 }
 
-
 function assert(scheduledMeetings, result, expected) {
     const resultMsg = `Scheduled meetings are ${JSON.stringify(scheduledMeetings)} and their expected condensed ranges are ${JSON.stringify(expected)}`;
     if (common.isArrayOfObjectsEqual(result, expected)) {
@@ -70,7 +69,6 @@ function assert(scheduledMeetings, result, expected) {
         return false;
     }
 }
-
 
 function printTestResult(solutionFunc) {
     let count = 0;

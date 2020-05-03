@@ -65,6 +65,36 @@ const testMeetings = [
         label: 'overlapping-meetings1'
     }];
 
+const testArrays = [
+    {
+        array: [],
+        expectedResult: [],
+        label: 'empty-array'
+    },
+    {
+        array: ['v'],
+        expectedResult: [
+            'v'
+        ],
+        label: 'one-char-array'
+    },
+    {
+        array: ['v',
+            'e',
+            'r',
+            'a'],
+        expectedResult: [
+            'a',
+            'r',
+            'e',
+            'v'
+        ],
+        label: 'short-array1'
+    },
+
+]
+
 module.exports = {
-    testMeetings
+    testMeetings,
+    testArrays
 }

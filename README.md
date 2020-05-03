@@ -118,7 +118,7 @@ Properties
 
 If you know the sum of a triangular series, you can find n by solving a quadratic equation. 
 
-![Quadratic equation](https://www.screencast.com/t/0i0C9KgXcSW9) 
+![Quadratic equation](https://user-images.githubusercontent.com/2241065/80916667-d484b600-8d62-11ea-9aa9-f7067a254767.png) 
 
 If you know n, you can easily find the sum with the series sum formula above
 

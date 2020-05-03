@@ -33,9 +33,15 @@ function reverseArray(chars = []) {
     const len = chars.length;
 
     if (len >= 2) {
-        const copyChar = [...chars];
-        for (let i = 0; i < len; i++) {
-            chars[i] = copyChar[len - 1 - i];
+        let leftIndex = 0;
+        let rightIndex = len - 1;
+        while (leftIndex < rightIndex) {
+            const temp = chars[leftIndex];
+            chars[leftIndex] = chars[rightIndex];
+            chars[rightIndex] = temp;
+
+            leftIndex++;
+            rightIndex--;
         }
     }
 }

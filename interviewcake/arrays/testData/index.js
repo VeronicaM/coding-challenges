@@ -91,6 +91,30 @@ const testArrays = [
         ],
         label: 'short-array1'
     },
+    {
+        chars: ['b',
+            'u',
+            'c',
+            'u',
+            'r',
+            'e',
+            's',
+            't',
+            'i'
+        ],
+        expectedResult: [
+            'i',
+            't',
+            's',
+            'e',
+            'r',
+            'u',
+            'c',
+            'u',
+            'b'
+        ],
+        label: 'short-array2'
+    },
 
 ]
 

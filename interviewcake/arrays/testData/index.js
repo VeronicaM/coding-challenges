@@ -212,23 +212,144 @@ const testWordsArrays = [
         label: 'two-words-array'
     },
     {
-    chars: [
-        'c', 'a', 'k', 'e', ' ',
-        'p', 'o', 'u', 'n', 'd', ' ',
-        's', 't', 'e', 'a', 'l'
-    ]
-    ,
-    expectedResult: [
-        's', 't', 'e', 'a', 'l', ' ',
-        'p', 'o', 'u', 'n', 'd', ' ',
-        'c', 'a', 'k', 'e',
-    ],
-    label: 'three-words-array'
-},
+        chars: [
+            'c', 'a', 'k', 'e', ' ',
+            'p', 'o', 'u', 'n', 'd', ' ',
+            's', 't', 'e', 'a', 'l'
+        ]
+        ,
+        expectedResult: [
+            's', 't', 'e', 'a', 'l', ' ',
+            'p', 'o', 'u', 'n', 'd', ' ',
+            'c', 'a', 'k', 'e',
+        ],
+        label: 'three-words-array'
+    },
+];
+
+const testOrdersArrays = [
+    {
+        orders1: [],
+        orders2: [],
+        expectedResult: [],
+        label: 'two-empty-orders'
+    },
+    {
+        orders1: [],
+        orders2: [1, 5, 8, 12, 14, 19],
+        expectedResult: [
+            1, 5, 8, 12, 14, 19
+        ],
+        label: 'one-empty-order'
+    },
+    {
+        orders1: [3, 4, 6, 10, 11, 15],
+        orders2: [1, 5, 8, 12, 14, 19],
+        expectedResult: [
+            1, 3, 4, 5, 6, 8,
+            10, 11, 12, 14, 15, 19
+        ],
+        label: 'overlapping-arrays'
+    },
+    {
+        orders1: [1, 2, 3, 4, 5, 6],
+        orders2: [7, 8, 9, 10, 11, 12],
+        expectedResult: [
+            1, 2, 3, 4, 5, 6,
+            7, 8, 9, 10, 11, 12
+        ],
+        label: 'non-overlapping-arrays'
+    },
+    {
+        orders1: [7, 8, 9, 10, 11, 12],
+        orders2: [1, 2, 3, 4, 5, 6],
+        expectedResult: [
+            1, 2, 3, 4, 5, 6,
+            7, 8, 9, 10, 11, 12
+        ],
+        label: 'reversed-non-overlapping-arrays'
+    },
+    {
+        orders1: [7, 8, 9, 12],
+        orders2: [1, 2, 3, 4, 5, 6],
+        expectedResult: [
+            1, 2, 3, 4, 5, 6,
+            7, 8, 9, 12
+        ],
+        label: 'non-equal-number-of-orders'
+    }, {
+        orders1: [7, 8, 9, 12],
+        orders2: [1, 6],
+        expectedResult: [
+            1, 6,
+            7, 8, 9, 12
+        ],
+        label: 'non-equal-number-of-orders2'
+    }
+];
+
+const testMultipleOrdersArrays = [
+    {
+        orders: [[], [], []],
+        expectedResult: [],
+        label: 'three-empty-orders'
+    },
+    {
+        orders: [[], [1, 5, 8, 12, 14, 19], [15, 16, 17]],
+        expectedResult: [
+            1, 5, 8, 12, 14, 15, 16, 17, 19
+        ],
+        label: 'one-empty-order'
+    },
+    {
+        orders: [[3, 4, 6, 10, 11, 15], [1, 5, 8, 12, 14, 19], [20, 21]],
+        expectedResult: [
+            1, 3, 4, 5, 6, 8,
+            10, 11, 12, 14, 15, 19, 20, 21
+        ],
+        label: 'overlapping-arrays'
+    },
+    {
+        orders: [[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12], [13, 14]],
+        expectedResult: [
+            1, 2, 3, 4, 5, 6,
+            7, 8, 9, 10, 11, 12,
+            13, 14
+        ],
+        label: 'non-overlapping-arrays'
+    },
+    {
+        orders: [[7, 8, 9, 10, 11, 12], [1, 2, 3, 4, 5, 6], [20, 21]],
+        expectedResult: [
+            1, 2, 3, 4, 5, 6,
+            7, 8, 9, 10, 11, 12,
+            20, 21
+        ],
+        label: 'reversed-non-overlapping-arrays'
+    },
+    {
+        orders: [[7, 8, 9, 12], [1, 2, 3, 4, 5, 6], [13, 14]],
+        expectedResult: [
+            1, 2, 3, 4, 5, 6,
+            7, 8, 9, 12,
+            13, 14
+        ],
+        label: 'non-equal-number-of-orders'
+    }, {
+        orders: [[7, 8, 9, 12, 13], [1, 2, 3, 4, 5, 6], [15, 18], [14, 16]],
+        expectedResult: [
+            1, 2, 3, 4, 5, 6,
+            7, 8, 9, 12,
+            13, 14, 15, 16, 18
+        ],
+        label: '4-arrays'
+    }
 ];
 
 module.exports = {
     testMeetings,
     testArrays,
-    testWordsArrays
-}
+    testWordsArrays,
+    testOrdersArrays,
+    testMultipleOrdersArrays
+};

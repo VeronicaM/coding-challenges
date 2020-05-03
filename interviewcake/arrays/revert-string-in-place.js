@@ -30,7 +30,14 @@ const testCases = require('./testData/index.js');
 */
 
 function reverseArray(chars = []) {
-    return chars;
+    const len = chars.length;
+
+    if (len >= 2) {
+        const copyChar = [...chars];
+        for (let i = 0; i < len; i++) {
+            chars[i] = copyChar[len - 1 - i];
+        }
+    }
 }
 
 function assert(chars, result, expected) {
@@ -39,7 +46,7 @@ function assert(chars, result, expected) {
         console.log(resultMsg.green)
         return true;
     } else {
-        console.error(`${resultMsg}, found ${JSON.stringify(result)}`.brightRed);
+        console.error(`${resultMsg}, found ${result}`.brightRed);
         return false;
     }
 }
@@ -50,7 +57,9 @@ function printTestResult(solutionFunc) {
 
     testArrays.forEach(({ chars, expectedResult, label = '' }, index) => {
         console.log(`${index + 1}. ${label}`.yellow);
-        const isCorrect = assert(chars, solutionFunc(chars), expectedResult);
+        const copyInitialArr = [...chars];
+        solutionFunc(chars);
+        const isCorrect = assert(copyInitialArr, chars, expectedResult);
 
         if (!isCorrect) {
             count += 1;

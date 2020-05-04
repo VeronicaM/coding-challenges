@@ -148,7 +148,18 @@ If you know n, you can easily find the sum with the series sum formula above
 ## Live practice
 [Pramp](https://blog.pramp.com/) - Live interview practice with pears
 
+## Articles
+- [How to approach solving algorithms](https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/) 
+Details these problem solving framework:
+    1. Understand
+    2. Plan
+    3. Divide
+    4. Stuck ? Debug, Research 
+    5. Practice 
+- [Algorithms and data structures study plan](https://dev.to/rmorabia/the-self-taught-engineer-s-algorithm-study-plan-472a)
 
+## Youtubers to follow
+- [WilliamFiset](https://www.youtube.com/channel/UCD8yeTczadqdARzQUp29PJw)
 
 # How to use this repo
 

@@ -8,8 +8,9 @@ I usually create a PR for each solution I add to the repo. Check the [closed PRs
 - [Merge meeting intervals](https://github.com/VeronicaM/coding-challenges/blob/master/interviewcake/arrays/merging-meeting-times.js)
 - [Reverse string in place](https://github.com/VeronicaM/coding-challenges/blob/master/interviewcake/arrays/revert-string-in-place.js)
 - [Reverse words in place in an array of chars](https://github.com/VeronicaM/coding-challenges/pull/1)
-- [Merge sorted Arrays](https://github.com/VeronicaM/coding-challenges/blob/master/interviewcake/arrays/merge-sorted-arrays.js)
+- [Merge sorted Arrays](https://github.com/VeronicaM/coding-challenges/blob/master/interviewcake/arrays/merge-sorted-arrays.js) 
 - [Merge multiple sorted arrays](https://github.com/VeronicaM/coding-challenges/blob/master/interviewcake/arrays/merge-multiple-sorted-arrays.js)
+- [First-come-first-served-checker](https://github.com/VeronicaM/coding-challenges/blob/master/interviewcake/arrays/first-come-first-served-checker.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/4)
 
 ### Codility
 

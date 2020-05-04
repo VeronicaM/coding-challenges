@@ -133,6 +133,7 @@ If you know n, you can easily find the sum with the series sum formula above
 
 [Educative.io](https://www.educative.io/) - Algorithms, Design Systems and Programming Interview Tutorials
    - [Big-O Notation For Coding Interviews and Beyond](https://www.educative.io/courses/big-o-notation-for-interviews-and-beyond) 
+   - [Mastering Data Structures and Sorting Algorithms in JavaScript](https://www.educative.io/courses/mastering-data-structures-and-sorting-algorithms-in-javascript)
 
 [Hackerrank](https://www.hackerrank.com/dashboard) - Practice, Certificates, Competitions
 

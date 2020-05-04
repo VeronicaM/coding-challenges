@@ -346,10 +346,84 @@ const testMultipleOrdersArrays = [
     }
 ];
 
+const testFirstComeFirstServed = [
+    {
+        takeOutOrders: [],
+        dineInOrders: [],
+        servedOrders: [],
+        expectedResult: true,
+        label: 'no-orders'
+    },
+    {
+        takeOutOrders: [],
+        dineInOrders: [2, 4, 6],
+        servedOrders: [2, 4, 6],
+        expectedResult: true,
+        label: 'no-take-out-orders-fifs'
+    },
+    {
+        takeOutOrders: [],
+        dineInOrders: [2, 4, 6],
+        servedOrders: [2, 6, 4],
+        expectedResult: false,
+        label: 'no-take-out-orders-no-fifs'
+    },
+    {
+        takeOutOrders: [1, 3, 5],
+        dineInOrders: [],
+        servedOrders: [1, 3, 5],
+        expectedResult: true,
+        label: 'no-dine-in-orders-fifs'
+    },
+    {
+        takeOutOrders: [1, 3, 5],
+        dineInOrders: [],
+        servedOrders: [1, 5, 3],
+        expectedResult: false,
+        label: 'no-dine-in-orders-no-fifs'
+    },
+    {
+        takeOutOrders: [1, 3, 5],
+        dineInOrders: [2, 4, 6],
+        servedOrders: [1, 2, 4, 6, 5, 3],
+        expectedResult: false,
+        label: 'no-first-come-first-served'
+    },
+    {
+        takeOutOrders: [17, 8, 24],
+        dineInOrders: [12, 19, 2],
+        servedOrders: [17, 8, 12, 19, 24, 2],
+        expectedResult: true,
+        label: 'first-come-first-served'
+    },
+    {
+        takeOutOrders: [17, 8, 24],
+        dineInOrders: [12, 19, 2],
+        servedOrders: [17, 8, 12, 19, 2],
+        expectedResult: false,
+        label: 'missing-takeoutOrdered-in-served-orders'
+    },
+    {
+        takeOutOrders: [17, 8, 24],
+        dineInOrders: [17, 19, 2],
+        servedOrders: [17, 17, 8, 19, 2, 24],
+        expectedResult: true,
+        label: 'duplicate-orders'
+    },
+    {
+        takeOutOrders: [1, 8, 17, 24],
+        dineInOrders: [17, 19, 2],
+        servedOrders: [17, 1, 8, 17, 19, 2, 24],
+        expectedResult: true,
+        label: 'duplicate-orders2'
+    },
+];
+
 module.exports = {
     testMeetings,
     testArrays,
     testWordsArrays,
     testOrdersArrays,
-    testMultipleOrdersArrays
+    testMultipleOrdersArrays,
+    testFirstComeFirstServed
 };

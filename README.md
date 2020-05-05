@@ -19,6 +19,8 @@ Solutions comprised only of link to report on codility to respect Codility's cop
 Lesson 1
 - [binaryGap](https://github.com/VeronicaM/coding-challenges/blob/master/codility/lesson1/solution.txt)
 
+Lesson 2 
+- cyclic-rotation -[PR](https://github.com/VeronicaM/coding-challenges/pull/5) for solution
 
 # Notes
 

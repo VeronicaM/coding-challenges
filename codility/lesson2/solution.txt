@@ -1,0 +1,4 @@
+https://app.codility.com/demo/results/training4UXGMM-FSM/
+
+worst-case space complexity O(1)
+worst-case time complexity O(N)

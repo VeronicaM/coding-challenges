@@ -22,11 +22,15 @@ Lesson 1
 Lesson 2 
 - cyclic-rotation -[PR](https://github.com/VeronicaM/coding-challenges/pull/5) for solution
 
+### Other
+
+**Recursion**
+- [flatten array of unkown nesting level](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/flatten/flatten-nested-array.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/6)
 # Notes
 
-## BigO notation
+## Big O notation
 
-BigO notation is used to estimate how much runtime and space certain algorithms use relative to the input
+Big O notation is used to estimate how much runtime and space certain algorithms use relative to the input
 
 A O(1) space complexity means only a single value is stored in memory throughout the algorithm's lifecycle
 A O(n) space complexity means n values are stored in memory throughout the algorithm's lifecycle

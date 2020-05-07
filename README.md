@@ -26,6 +26,8 @@ Lesson 2
 
 **Recursion**
 - [flatten array of unkown nesting level](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/flatten/flatten-nested-array.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/6)
+- [reverse string](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/reverse-string/reverse-string.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/7)
+
 # Notes
 
 ## Big O notation

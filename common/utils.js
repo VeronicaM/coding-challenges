@@ -68,8 +68,22 @@ function printTestResult(solutionFunc, testData, expectedResultLabel, checkType 
     console.error(`You have ${testData.length - count}/${testData.length} passing tests. Congrats!!!`.green);
 }
 
+function printMatrix(matrix) {
+    for (let colIndex = 0; colIndex < matrix.length; colIndex++) { // iterate over columns
+        let rowString = '';
+
+        for (let rowIndex = 0; rowIndex < matrix[0].length; rowIndex++) { // iterate over rows
+            rowString += `${matrix[colIndex][rowIndex]}`;
+        }
+
+        console.log(`${rowString}`);
+    }
+    console.log('\n');
+}
+
 module.exports = {
     isArrayEqual,
     isArrayOfObjectsEqual,
-    printTestResult
+    printTestResult,
+    printMatrix
 }

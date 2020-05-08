@@ -17,17 +17,13 @@ const testCases = require('./testData/index.js');
  * return '3'
 */
 
-function findIndex(arr, startIndex, value) {
-    for (let i = startIndex; i < arr.length; i++) {
-        if (arr[i] === value) {
-            return i;
-        }
-    }
-    return -1;
+function findIndex(arr, startIndex = -1, value) {
+    if (startIndex === arr.length) return -1;
+    return arr[startIndex] === value ? startIndex: findIndex(arr, startIndex + 1, value);
 }
 
 function assert(arr, startIndex, value, result, expected) {
-    const resultMsg = `Input arr is ${arr}, startIndex is ${startIndex} and value is ${value}. The expected number of vowels value is ${expected}`;
+    const resultMsg = `Input arr is ${arr}, startIndex is ${startIndex} and value is ${value}. The expected index of value is ${expected}`;
     if (result === expected) {
         console.log(resultMsg.green)
         return true;

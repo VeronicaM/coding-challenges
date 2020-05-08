@@ -34,6 +34,13 @@ const testArrays = [
         expectedResult: 4,
         label: 'found-value2'
     },
+    {
+        arr: [9, 8, 1, 8, 1, 7],
+        startIndex: 0,
+        value: 1,
+        expectedResult: 2,
+        label: 'found-value1'
+    },
 ];
 
 module.exports = {

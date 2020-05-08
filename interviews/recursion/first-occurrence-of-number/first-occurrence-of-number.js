@@ -18,7 +18,12 @@ const testCases = require('./testData/index.js');
 */
 
 function findIndex(arr, startIndex, value) {
-    return startIndex;
+    for (let i = startIndex; i < arr.length; i++) {
+        if (arr[i] === value) {
+            return i;
+        }
+    }
+    return -1;
 }
 
 function assert(arr, startIndex, value, result, expected) {

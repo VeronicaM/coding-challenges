@@ -28,15 +28,12 @@ const testCases = require('./testData/index.js');
 */
 
 function isToeplitzMatrix(matrix = []) {
-    common.printMatrix(matrix);
-
     const diagonalStart = matrix[0] && matrix[0][0] || '';
 
     if (!diagonalStart) return false;
 
     for (let i = 0; i < matrix.length - 1; i++) { // iterate over rows
         for (let j = 0; j < matrix[0].length - 1; j++) { // iterate over columns
-            console.log(`matrix[${i}][${j}]`, matrix[i][j], `matrix[${i + 1}][${j + 1}]`, matrix[i + 1][j + 1]);
             if (matrix[i][j] !== matrix[i + 1][j + 1]) {
                 return false;
             }

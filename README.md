@@ -28,6 +28,7 @@ Lesson 2
 - [flatten array of unkown nesting level](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/flatten/flatten-nested-array.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/6)
 - [reverse string](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/reverse-string/reverse-string.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/7)
 - [count-vowels](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/count-vowel/count-vowels.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/8)
+- [Find index of first occurrence of number](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/first-occurrence-of-number/first-occurrence-of-number.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/9)
 
 # Notes
 

@@ -16,7 +16,15 @@ const testMatrixes = [
         [5, 1, 9, 3],
         [6, 5, 1, 2]],
         expectedResult: false,
-        label: 'non-toeplitz-matrix'
+        label: 'non-toeplitz-matrix1'
+    },
+    {
+        params: [[3, 7, 0, 9, 8],
+        [5, 3, 7, 0, 9],
+        [6, 5, 3, 7, 0],
+        [4, 6, 5, 3, 7]],
+        expectedResult: true,
+        label: 'toeplitz-matrix2'
     },
 ];
 

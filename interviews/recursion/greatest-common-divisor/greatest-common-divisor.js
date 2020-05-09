@@ -13,7 +13,18 @@ const testCases = require('./testData/index.js');
 */
 
 function greatestCommonDivisor([num1, num2] = []) {
-    return num1;
+    if (num2 == 0 || num1 === 0) return 0;
+
+    let max = num1 < num2 ? num2 : num1;
+    let greatestCD = -1;
+
+    for (let i = 0; i < max; i++) {
+        if (num1 % i === 0 && num2 % i === 0 && i > greatestCD) {
+            greatestCD = i;
+        }
+    }
+
+    return greatestCD;
 }
 
 

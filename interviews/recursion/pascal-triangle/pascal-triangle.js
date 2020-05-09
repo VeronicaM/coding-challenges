@@ -11,20 +11,38 @@ const testCases = require('./testData/index.js');
  * return [1,3,3,1]
 */
 
-function pascalTriangleRow(n) {
-    if (n === 0) return [1];
-    if (n === 1) return [1, 1];
+class PascalTriangle {
+    memo = {};
 
-    const prevRow = pascalTriangleRow(n - 1);
-    const currentCombinedValue = [1];
+    getPascalRow(n) {
+        if (n === 0) return [1];
+        if (n === 1) return [1, 1];
 
-    for (let i = 0; i < n - 1; i++) {
-        currentCombinedValue.push(prevRow[i] + prevRow[i + 1])
+        let prevRow = [];
+
+        if (this.memo[n - 1] && this.memo[n - 1].length) {
+            prevRow = this.memo[n - 1];
+            console.log('providing memoized row value', n - 1);
+        } else {
+            prevRow = this.getPascalRow(n - 1);
+            console.log('building prev row', n - 1);
+        }
+
+        const currentCombinedValue = [1];
+
+        for (let i = 0; i < n - 1; i++) {
+            currentCombinedValue.push(prevRow[i] + prevRow[i + 1])
+        }
+
+        currentCombinedValue.push(1);
+
+        // save current built row
+        this.memo[n] = currentCombinedValue;
+
+        return currentCombinedValue;
     }
-
-    currentCombinedValue.push(1);
-    return currentCombinedValue;
 }
 
+const myPascalTriangle = new PascalTriangle();
 
-common.printTestResult(pascalTriangleRow, testCases.testNumbers, 'pascal triangle row', 'array');
+common.printTestResult(myPascalTriangle.getPascalRow.bind(myPascalTriangle), testCases.testNumbers, 'pascal triangle row', 'array');

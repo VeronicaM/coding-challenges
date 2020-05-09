@@ -22,7 +22,7 @@ const testNumbers = [
     {
         params: [11, 121],
         expectedResult: 11,
-        label: 'numbers-2'
+        label: 'numbers-3'
     }
 ];
 

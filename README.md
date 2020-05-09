@@ -30,8 +30,9 @@ Lesson 2
 - [count-vowels](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/count-vowel/count-vowels.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/8)
 - [Find index of first occurrence of number](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/first-occurrence-of-number/first-occurrence-of-number.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/9)
 - [Fibonacci with memoized values](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/fibonacci/fibonacci.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/12)
+- [Greatest common divisor](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/greatest-common-divisor/greatest-common-divisor.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/13)
 
-**Pramp**
+### Pramp
   #### Interview 1
 - [Toeplitz Matrix](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/pramp/toeplitz-matrix/toeplitz-matrix.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/10)
 - [Drone Flight Planner](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/pramp/drone-flight-planner/drone-flight-planner.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/11)

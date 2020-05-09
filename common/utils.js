@@ -46,7 +46,7 @@ function assert(params, result, expected, expectedResultLabel, checkType) {
         console.log(resultMsg.green)
         return true;
     } else {
-        console.error(`${resultMsg}, found ${result}`.brightRed);
+        console.error(`${resultMsg}, found ${JSON.stringify(result)}`.brightRed);
         return false;
     }
 }

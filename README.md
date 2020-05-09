@@ -210,6 +210,10 @@ To run any of the javascript solution exercises:
    
 Test data can be found in the testData/index.js folder for each exercise category subfolder
 
+## Run tests for all exercises solutions
+
+- run `npm run test` in the root of the repo
+
 ## How to contribute
 
 - If you'd like to make suggestions or ask questions around some of the solutions, please feel free to **open an Issue**. I'll reply to all of them. 

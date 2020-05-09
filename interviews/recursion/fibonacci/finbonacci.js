@@ -14,7 +14,8 @@ const testCases = require('./testData/index.js');
 */
 
 function fibonacci(n = 0) {
-    return n;
+    if (n === 1 || n === 0) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 common.printTestResult(fibonacci, testCases.testFibonacciNumbers, 'fibonacci element');

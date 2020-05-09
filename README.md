@@ -29,6 +29,7 @@ Lesson 2
 - [reverse string](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/reverse-string/reverse-string.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/7)
 - [count-vowels](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/count-vowel/count-vowels.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/8)
 - [Find index of first occurrence of number](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/first-occurrence-of-number/first-occurrence-of-number.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/9)
+- [Fibonacci with memoized values](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/fibonacci/fibonacci.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/12)
 
 **Pramp**
   #### Interview 1

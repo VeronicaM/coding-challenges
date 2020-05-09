@@ -18,6 +18,11 @@ const testNumbers = [
         params: 5,
         expectedResult: [1, 5, 10, 10, 5, 1],
         label: 'fifth-row'
+    },
+    {
+        params: 10,
+        expectedResult: [1, 10, 45, 120, 210, 252, 210, 120, 45, 10, 1],
+        label: 'tenth-row'
     }
 ];
 

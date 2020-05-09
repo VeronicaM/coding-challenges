@@ -16,12 +16,12 @@ const testFibonacciNumbers = [
     },
     {
         params: 7,
-        expectedResult: 8,
+        expectedResult: 13,
         label: 'seventh-fib-number'
     },
     {
         params: 10,
-        expectedResult: 34,
+        expectedResult: 55,
         label: 'tenth-fib-number'
     }
 ];

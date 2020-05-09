@@ -178,6 +178,19 @@ Details these problem solving framework:
 ## Youtubers to follow
 - [WilliamFiset](https://www.youtube.com/channel/UCD8yeTczadqdARzQUp29PJw)
 
+# Words of Encouragement
+
+" The first requisite for success is the ability to apply your physical and mental energies to one problem incessantly without growing weary. " Thomas A. Edison
+
+" The secret of success is constancy to purpose. "
+Benjamin Disraeli
+
+" Most of the shadows of life are caused by standing in our own sunshine. "
+Ralph Waldo Emerson
+
+" When you doubt your power, you give power to your doubt. "
+Honore de Balzac
+
 # How to use this repo
 
 ## Requirements

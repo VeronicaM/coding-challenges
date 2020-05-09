@@ -18,6 +18,11 @@ const testNumbers = [
         params: [42, 56],
         expectedResult: 14,
         label: 'numbers-2'
+    },
+    {
+        params: [11, 121],
+        expectedResult: 11,
+        label: 'numbers-2'
     }
 ];
 

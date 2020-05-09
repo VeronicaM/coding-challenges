@@ -26,7 +26,7 @@ const isArrayOfObjectsEqual = (arr1, arr2) => {
 
 
 function assert(params, result, expected, expectedResultLabel, checkType) {
-    const resultMsg = `Passed in params were ${JSON.stringify(params)} and the expected ${expectedResultLabel} is ${expected}`;
+    const resultMsg = `Passed in params were ${JSON.stringify(params)} and the expected ${expectedResultLabel} is ${JSON.stringify(expected)}`;
 
     let checkCondition;
 

@@ -30,8 +30,8 @@ Lesson 2
 - [count-vowels](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/count-vowel/count-vowels.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/8)
 - [Find index of first occurrence of number](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/first-occurrence-of-number/first-occurrence-of-number.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/9)
 
-**Pramp interview questions**
-  Interview 1
+**Pramp**
+  #### Interview 1
 - [Toeplitz Matrix](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/pramp/toeplitz-matrix/toeplitz-matrix.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/10)
 
 # Notes

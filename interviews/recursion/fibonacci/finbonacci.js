@@ -13,9 +13,27 @@ const testCases = require('./testData/index.js');
  * returns 34
 */
 
-function fibonacci(n = 0) {
-    if (n === 1 || n === 0) return n;
-    return fibonacci(n - 1) + fibonacci(n - 2);
-}
+class FibNumber {
+    memoizedValues = {};
 
-common.printTestResult(fibonacci, testCases.testFibonacciNumbers, 'fibonacci element');
+    getFibNumber(n) {
+        if (this.memoizedValues[n]) {
+            console.log(`grabbing memoized value[${n}]`);
+            return this.memoizedValues[n];
+        }
+
+        if (n === 1 || n === 0) return n;
+
+        const result = this.getFibNumber(n - 1) + this.getFibNumber(n - 2);
+
+        console.log(`computing fib(${n})`);
+
+        this.memoizedValues[n] = result;
+
+        return result;
+    }
+};
+
+const myFib = new FibNumber();
+
+common.printTestResult(myFib.getFibNumber.bind(myFib), testCases.testFibonacciNumbers, 'fibonacci element');

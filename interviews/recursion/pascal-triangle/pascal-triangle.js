@@ -22,10 +22,8 @@ class PascalTriangle {
 
         if (this.memo[n - 1] && this.memo[n - 1].length) {
             prevRow = this.memo[n - 1];
-            console.log('providing memoized row value', n - 1);
         } else {
             prevRow = this.getPascalRow(n - 1);
-            console.log('building prev row', n - 1);
         }
 
         const currentCombinedValue = [1];

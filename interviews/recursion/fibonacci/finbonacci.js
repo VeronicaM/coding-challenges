@@ -18,15 +18,12 @@ class FibNumber {
 
     getFibNumber(n) {
         if (this.memoizedValues[n]) {
-            console.log(`grabbing memoized value[${n}]`);
             return this.memoizedValues[n];
         }
 
         if (n === 1 || n === 0) return n;
 
         const result = this.getFibNumber(n - 1) + this.getFibNumber(n - 2);
-
-        console.log(`computing fib(${n})`);
 
         this.memoizedValues[n] = result;
 

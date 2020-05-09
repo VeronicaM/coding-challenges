@@ -31,6 +31,7 @@ Lesson 2
 - [Find index of first occurrence of number](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/first-occurrence-of-number/first-occurrence-of-number.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/9)
 - [Fibonacci with memoized values](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/fibonacci/fibonacci.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/12)
 - [Greatest common divisor](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/greatest-common-divisor/greatest-common-divisor.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/13)
+- [Pascal Triangle](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/pascal-triangle/pascal-triangle.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/14)
 
 ### Pramp
   #### Interview 1

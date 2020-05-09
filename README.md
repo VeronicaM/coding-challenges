@@ -33,6 +33,7 @@ Lesson 2
 **Pramp**
   #### Interview 1
 - [Toeplitz Matrix](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/pramp/toeplitz-matrix/toeplitz-matrix.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/10)
+- [Drone Flight Planner](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/pramp/drone-flight-planner/drone-flight-planner.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/11)
 
 # Notes
 

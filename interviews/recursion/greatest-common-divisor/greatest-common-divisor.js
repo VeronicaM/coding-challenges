@@ -12,19 +12,19 @@ const testCases = require('./testData/index.js');
  * 
 */
 
-function greatestCommonDivisor([num1, num2] = []) {
+function greatestCommonDivisor([num1, num2] = [], i = 1) {
     if (num2 == 0 || num1 === 0) return 0;
 
-    let max = num1 < num2 ? num2 : num1;
-    let greatestCD = -1;
+    let min = num1 < num2 ? num1 : num2;
+    let innerIndex = i == 1 ? Math.round(min / 2) : i;
 
-    for (let i = 0; i < max; i++) {
-        if (num1 % i === 0 && num2 % i === 0 && i > greatestCD) {
-            greatestCD = i;
-        }
+    if (innerIndex <= 0) {
+        return -1;
     }
 
-    return greatestCD;
+    if (num1 % innerIndex === 0 && num2 % innerIndex === 0) return innerIndex;
+
+    return greatestCommonDivisor([num1, num2], innerIndex - 1);
 }
 
 

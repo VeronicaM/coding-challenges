@@ -15,11 +15,18 @@ const utils = require('./testData/index.js');
  * returns [ 2, 3, 4, 5, 6, 10, 11 ]
 */
 
+let sortedArray = [];
+
 function sortTree(tree) {
-    return []
+    if (tree.getNode() === null) return;
+    sortTree(tree.getLeftTree());
+    sortedArray.push(tree.getNode());
+    sortTree(tree.getRightTree());
+    return sortedArray;
 }
 
 // testing logs
-for (let i = 0; i <= 5; i++) {
+for (let i = 1; i <= 5; i++) {
     console.log(sortTree(utils.buildTree(i)));
+    sortedArray = [];
 }

@@ -32,6 +32,7 @@ Lesson 2
 - [Fibonacci with memoized values](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/fibonacci/fibonacci.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/12)
 - [Greatest common divisor](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/greatest-common-divisor/greatest-common-divisor.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/13)
 - [Pascal Triangle](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/pascal-triangle/pascal-triangle.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/14)
+- [Sort Binary Search Tree](https://github.com/VeronicaM/coding-challenges/blob/master/interviews/recursion/sort-binary-tree/sort-binary-tree.js) - associated [PR](https://github.com/VeronicaM/coding-challenges/pull/16) 
 
 ### Pramp
   #### Interview 1

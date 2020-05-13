@@ -1,22 +1,33 @@
+const utils = require('../../../../common/utils.js');
 
-const TreeNode = require('../TreeNode.js').TreeNode;
-
-const buildTree = (multiplierFactor = 1) => {
-    const emptyNode = new TreeNode(null, null, null);
-
-    const firstNodeLeftTree = new TreeNode(2 * multiplierFactor, emptyNode, emptyNode);
-    const secondNodeLeftTree = new TreeNode(3 * multiplierFactor, firstNodeLeftTree, emptyNode);
-
-    const leftTree = new TreeNode(4 * multiplierFactor, secondNodeLeftTree, emptyNode)
-
-    const firstNodeRightTree = new TreeNode(6 * multiplierFactor, emptyNode, emptyNode);
-    const secondNodeRightTree = new TreeNode(11 * multiplierFactor, emptyNode, emptyNode);
-
-    const rightTree = new TreeNode(10 * multiplierFactor, firstNodeRightTree, secondNodeRightTree);
-
-    return new TreeNode(5, leftTree, rightTree);
-};
+const testTrees = [
+    {
+        params: utils.buildTree(1),
+        expectedResult: [2, 3, 4, 5, 6, 10, 11],
+        label: 'tree-1'
+    },
+    {
+        params: utils.buildTree(2),
+        expectedResult: [4, 6, 8, 10, 12, 20, 22],
+        label: 'tree-2'
+    },
+    {
+        params: utils.buildTree(3),
+        expectedResult: [6, 9, 12, 15, 18, 30, 33],
+        label: 'tree-3'
+    },
+    {
+        params: utils.buildTree(4),
+        expectedResult: [8, 12, 16, 20, 24, 40, 44],
+        label: 'tree-4'
+    },
+    {
+        params: utils.buildTree(5),
+        expectedResult: [10, 15, 20, 25,30, 50, 55],
+        label: 'tree-5'
+    },
+];
 
 module.exports = {
-    buildTree
+    testTrees,
 };

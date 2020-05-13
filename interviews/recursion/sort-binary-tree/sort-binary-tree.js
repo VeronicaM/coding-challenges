@@ -1,5 +1,5 @@
 const common = require('../../../common/utils.js');
-const utils = require('./testData/index.js');
+const testData = require('./testData/index.js');
 
 /* 
  *  Arguments: tree: TreeNode
@@ -15,18 +15,14 @@ const utils = require('./testData/index.js');
  * returns [ 2, 3, 4, 5, 6, 10, 11 ]
 */
 
-let sortedArray = [];
-
 function sortTree(tree) {
-    if (tree.getNode() === null) return;
-    sortTree(tree.getLeftTree());
-    sortedArray.push(tree.getNode());
-    sortTree(tree.getRightTree());
-    return sortedArray;
+    if (tree.getNode() === null) {
+        return;
+    } else {
+        const leftTree = [].concat(sortTree(tree.getLeftTree())).concat(tree.getNode());
+        const rightTree = [].concat(sortTree(tree.getRightTree()));
+        return [...leftTree, ...rightTree].filter(Boolean);
+    }
 }
 
-// testing logs
-for (let i = 1; i <= 5; i++) {
-    console.log(sortTree(utils.buildTree(i)));
-    sortedArray = [];
-}
+common.printTestResult(sortTree, testData.testTrees, 'sorted tree', 'array');
